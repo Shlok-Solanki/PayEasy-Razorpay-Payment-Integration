@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Payment History - PayEasy</title>
+</head>
+<body>
+
+  <!-- Semantic HTML5: <header> for top navigation -->
+  <header class="navbar">
+    <div class="brand">💳 PayEasy</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="payment.html">Pay Now</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <!-- Semantic HTML5: <main> for main page content -->
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1>Simple & Secure Online Payments</h1>
+      <p>Make payments instantly using Razorpay — India's trusted payment gateway.</p>
+      <a href="payment.html" class="btn-primary">Make a Payment</a>
+      <a href="history.html" class="btn-secondary">View History</a>
+    </div>
+  </main>
+
+  <!-- Semantic HTML5: <section> for feature cards -->
+  <section class="features">
+    <h2>Why PayEasy?</h2>
+    <!-- CSS Grid applied to .features-grid in CSS -->
+    <div class="features-grid">
+      <div class="card">
+        <span class="icon">🔒</span>
+        <h3>Secure</h3>
+        <p>All transactions verified with HMAC-SHA256 signature.</p>
+      </div>
+      <div class="card">
+        <span class="icon">⚡</span>
+        <h3>Fast</h3>
+        <p>Instant payment processing using Razorpay gateway.</p>
+      </div>
+      <div class="card">
+        <span class="icon">📋</span>
+        <h3>Tracked</h3>
+        <p>Every transaction stored in MongoDB for your records.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Semantic HTML5: <footer> for page footer -->
+  <footer>
+    <p>Built with Node.js · Express.js · MongoDB · Razorpay</p>
+  </footer>
+
+</body>
+</html>

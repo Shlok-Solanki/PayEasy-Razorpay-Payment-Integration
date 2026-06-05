@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Payment History - PayEasy</title>
+
+  <!-- Razorpay Checkout Script — loads Razorpay's popup -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">💳 PayEasy</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="payment.html">Pay Now</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="form-section">
+    <div class="form-card">
+      <h2>Enter Payment Details</h2>
+      <p class="subtitle">Enter an amount in ₹ to proceed with payment</p>
+
+      <!-- Payment Form -->
+      <div class="payment-form">
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="e.g. Rahul Sharma" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="e.g. rahul@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount (₹)</label>
+          <input type="number" id="amount" placeholder="e.g. 500" min="1" />
+        </div>
+
+        <!-- Status messages shown after payment -->
+        <div id="status-message" class="status-message hidden"></div>
+
+        <button id="pay-btn" class="btn-primary full-width" onclick="initiatePayment()">
+          Pay Now with Razorpay 🚀
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Powered by Razorpay · All transactions are encrypted and secure</p>
+  </footer>
+
+  <!-- Link to our payment.js file for logic -->
+  <script src="js/payment.js"></script>
+
+</body>
+</html>

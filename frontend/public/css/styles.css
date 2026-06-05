@@ -1,0 +1,299 @@
+:root {
+--primary: #facc15;
+--primary-dark: #eab308;
+--bg: #0f0f0f;
+--card: #1a1a1a;
+--text: #ffffff;
+--text-light: #bdbdbd;
+--border: #2d2d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+
+body {
+background: var(--bg);
+color: var(--text);
+min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+background: #151515;
+padding: 18px 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid var(--primary);
+}
+
+.brand {
+font-size: 28px;
+font-weight: 700;
+color: var(--primary);
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 25px;
+font-weight: 500;
+transition: .3s;
+}
+
+nav a:hover {
+color: var(--primary);
+}
+
+/* HOME PAGE */
+
+.hero-section {
+text-align: center;
+padding: 100px 20px;
+}
+
+.hero-content h1 {
+font-size: 56px;
+color: var(--primary);
+margin-bottom: 20px;
+}
+
+.hero-content p {
+color: var(--text-light);
+font-size: 18px;
+margin-bottom: 35px;
+}
+
+.btn-primary,
+.btn-secondary {
+display: inline-block;
+padding: 14px 28px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: 600;
+margin: 10px;
+transition: .3s;
+}
+
+.btn-primary {
+background: var(--primary);
+color: black;
+}
+
+.btn-primary:hover {
+transform: translateY(-3px);
+}
+
+.btn-secondary {
+border: 2px solid var(--primary);
+color: var(--primary);
+}
+
+.btn-secondary:hover {
+background: var(--primary);
+color: black;
+}
+
+.features {
+padding: 60px 20px;
+text-align: center;
+}
+
+.features h2 {
+color: var(--primary);
+margin-bottom: 40px;
+font-size: 36px;
+}
+
+.features-grid {
+display: flex;
+justify-content: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.card {
+width: 280px;
+background: var(--card);
+padding: 30px;
+border-radius: 15px;
+border-top: 4px solid var(--primary);
+transition: .3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+}
+
+.icon {
+font-size: 40px;
+display: block;
+margin-bottom: 15px;
+}
+
+/* PAYMENT PAGE */
+
+.form-section {
+display: flex;
+justify-content: center;
+padding: 50px 20px;
+}
+
+.form-card {
+width: 100%;
+max-width: 550px;
+background: var(--card);
+padding: 35px;
+border-radius: 18px;
+border: 1px solid var(--border);
+}
+
+.form-card h2 {
+text-align: center;
+color: var(--primary);
+margin-bottom: 10px;
+}
+
+.subtitle {
+text-align: center;
+color: var(--text-light);
+margin-bottom: 25px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+}
+
+input {
+width: 100%;
+padding: 12px;
+border-radius: 8px;
+border: 1px solid var(--border);
+background: #111;
+color: white;
+}
+
+input:focus {
+outline: none;
+border-color: var(--primary);
+}
+
+button {
+width: 100%;
+padding: 14px;
+border: none;
+border-radius: 10px;
+background: var(--primary);
+color: black;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+}
+
+button:hover {
+background: var(--primary-dark);
+}
+
+.full-width {
+width: 100%;
+}
+
+/* HISTORY PAGE */
+
+.history-section {
+width: 95%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+.history-section h2 {
+text-align: center;
+color: var(--primary);
+margin-bottom: 10px;
+}
+
+.history-table {
+width: 100%;
+border-collapse: collapse;
+background: var(--card);
+overflow: hidden;
+border-radius: 12px;
+}
+
+.history-table th {
+background: var(--primary);
+color: black;
+padding: 15px;
+}
+
+.history-table td {
+padding: 12px;
+border-bottom: 1px solid var(--border);
+text-align: center;
+}
+
+.history-table tr:hover {
+background: #222;
+}
+
+.loading {
+text-align: center;
+margin: 30px;
+color: var(--primary);
+}
+
+.no-data {
+text-align: center;
+margin-top: 30px;
+}
+
+.hidden {
+display: none;
+}
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 25px;
+color: var(--text-light);
+margin-top: 50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.features-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+.form-card{
+width:95%;
+}
+}

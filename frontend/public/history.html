@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Payment History - PayEasy</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">💳 PayEasy</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="payment.html">Pay Now</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="history-section">
+    <h2>Payment History</h2>
+    <p class="subtitle">All transactions recorded in MongoDB</p>
+
+    <!-- Loading indicator shown while fetching data -->
+    <div id="loading" class="loading">Fetching transactions...</div>
+
+    <!-- Table for payment history — CSS Grid used for responsive layout -->
+    <div id="history-container" class="hidden">
+      <table class="history-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Order ID</th>
+            <th>Payment ID</th>
+            <th>Amount (₹)</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="history-body">
+          <!-- Rows inserted by history.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="no-data" class="hidden no-data">
+      No payments found. <a href="payment.html">Make your first payment →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Data stored securely in MongoDB Atlas</p>
+  </footer>
+
+  <script src="js/history.js"></script>
+
+</body>
+</html>
