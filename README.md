@@ -145,19 +145,25 @@ http://localhost:5000
 
 ### Home Page
 
-*Add screenshot here*
+<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/69730d9d-df06-45a8-9f75-8a0b45faf027" />
+<img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/e88db89a-d7ea-4ca1-af6d-a79738182822" />
+
+
 
 ### Payment Page
 
-*Add screenshot here*
+<img width="1917" height="1024" alt="image" src="https://github.com/user-attachments/assets/09945491-e2b8-4031-b968-329971771577" />
+
 
 ### Razorpay Checkout
 
-*Add screenshot here*
+<img width="1917" height="1019" alt="image" src="https://github.com/user-attachments/assets/e759c6c6-4e83-4911-adeb-929e8fa84b05" />
+
 
 ### Payment History
 
-*Add screenshot here*
+<img width="1918" height="905" alt="image" src="https://github.com/user-attachments/assets/9c037249-b4d9-470e-916b-02439f7d5a8a" />
+
 
 ---
 
